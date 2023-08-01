@@ -27,7 +27,7 @@ section {
 header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 5;
 }
 
 
@@ -236,27 +236,9 @@ header {
 
 /*! HERO */
 
-.hero_section .hero_section_banner {
-    padding: 0;
-    width: 100%;
-    height: 50vh;
-    background-image: url(../images/index/index_banner.webp);
-    overflow: hidden;
-    background-size: cover;
-    background-position: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-.hero_section .hero_section_banner h2 {
-    color: rgba(255, 255, 255, 0.794);
-    background-color: rgba(87, 86, 86, 0.352);
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 3vw;
+.banner_subtitulo {
+    background-color: #000000a6;
+    border-radius: 30px;
 }
 
 .hero_section .hero_section_banner h2:hover {
@@ -282,7 +264,7 @@ header {
 .hero_section .hero_section_bienvenida p {
     color: #575656;
     padding: 10px;
-    width: 50vw;
+    width: 30%;
     font-size: 1.2vw;
 }
 
@@ -595,6 +577,9 @@ header {
 
 /*? *******************NINTENDO*************************/
 
+
+/*! GRID */
+
 .grid_contenedor_nintendo {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -613,6 +598,8 @@ header {
     width: 100%;
 }
 /*****************************************************/
+
+/*! BANNER */
 .grid_contenedor_nintendo .nintendo_banner_section {
     grid-area: banner;
 }
@@ -623,23 +610,13 @@ header {
 
 /*****************************************************/
 
+/*! ORDEN */
 .grid_contenedor_nintendo .nintendo_orden_section {
     grid-area: orden;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px 20px 50px;
-}
-
-.grid_contenedor_nintendo .nintendo_orden_section .nintendo_filtros_boton {
-    display: none;
-    padding: 15px;
-    border-radius: 15px;
-    border: 1px #cccbcb solid;
-    font-weight: bolder;
-    color: #3b3b3b;
-    font-size: 18px;
-    background-color: white;
 }
 
 .grid_contenedor_nintendo .nintendo_orden_section p{
@@ -674,8 +651,72 @@ header {
     color: #3b3b3b;
 }
 
+/**********************************************************/
 
-/*****************************************************/
+/*! FILTROS */
+.grid_contenedor_nintendo .nintendo_orden_section .nintendo_filtros_boton {
+    display: none;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px #cccbcb solid;
+    font-weight: bolder;
+    color: #3b3b3b;
+    font-size: 18px;
+    background-color: white;
+    margin-right: 5px;
+}
+
+
+.sidebar_filtros {
+    padding-top: 150px;
+}
+
+.offcanvas-body .nintendo_filtros_sidebar_categorias ul li {
+    margin-top: 25px;
+}
+.offcanvas-body .nintendo_filtros_sidebar_categorias ul li a {
+    color: #3b3b3b;
+}
+.offcanvas-body .nintendo_filtros_sidebar_categorias ul li a:hover {
+    color:#e60012;
+}
+
+.offcanvas-body .nintendo_filtros_sidebar_color ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 150px;
+}
+
+
+.offcanvas-body .nintendo_filtros_sidebar_color ul li input {
+    height: 25px;
+    width: 25px;
+}
+
+.offcanvas-body .nintendo_filtros_sidebar_color ul li a{
+    margin: 0;
+}
+
+
+.nintendo_filtros_sidebar_precio div {
+    display: flex;
+    margin-top: 0;
+}
+
+.nintendo_filtros_sidebar_precio div input {
+    width: 45px;
+    margin-right: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    border: #929292 1px solid;
+}
+
+.nintendo_filtros_sidebar_precio div i {
+    color: #e60012;
+    font-size: 25px;
+}
 
 .grid_contenedor_nintendo .nintendo_filtros_section {
     grid-area: filtros;
@@ -740,7 +781,6 @@ header {
     color: red;
 }
 
-/*****************************************************/
 
 .grid_contenedor_nintendo .nintendo_filtros_section .nintendo_filtros_precio div {
     display: flex;
@@ -762,6 +802,8 @@ header {
 
 
 /*****************************************************/
+
+/*! PRODUCTOS */
 .grid_contenedor_nintendo .nintendo_pruductos_section {
     grid-area: pruductos;
     padding: 0px 30px 30px 30px;
@@ -808,7 +850,6 @@ header {
     font-size: 25px;
 }
 
-/*****************************************************/
 .porductos_mostrar_mas {
     width: 100%;
     display: flex;
@@ -829,6 +870,13 @@ header {
 .porductos_mostrar_mas button:hover{
     background-color: #ec616c;
 }
+
+
+
+
+
+
+
 
 /*! FOOTER */
 
@@ -966,6 +1014,12 @@ header {
         font-size: 30px;
     }
 
+    .hero_section .hero_section_bienvenida p {
+        padding: 10px;
+        width: 60%;
+        font-size: 1.8vw;
+    }
+
     .footer_contenedor .footer_mapa {
         display: none;
     }
@@ -1046,8 +1100,12 @@ header {
     }
 
     .hero_section .hero_section_bienvenida h2 {
-        width: 50%;
-        font-size: 20px;
+        width: 80%;
+        font-size: 25px;
+    }
+
+    .hero_section .hero_section_bienvenida p {
+        display: none;
     }
 
 
@@ -1105,6 +1163,8 @@ header {
     .nintendo_orden_section select{
         width: 150px;
     }
+
+
 }
 
 @media (max-width: 450px) {
