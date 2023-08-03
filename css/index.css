@@ -152,12 +152,13 @@ header {
     color: #e60012;
 }
 
-.header_contendedor .header_buscador i {
+.header_contendedor .header_buscador span i {
     position: relative;
     right: 50px;
     font-size: 40px;
     color: #e60012;
 }
+
 
 
 .header_contendedor .header_buscador input::placeholder {
@@ -872,6 +873,74 @@ header {
 }
 
 
+/*? **************PRODUCTO***********************************/
+
+.datos_producto_section {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.datos_producto_section .datos_producto_section_portada {
+    width: 60% ;
+    padding: 20px;
+}
+
+
+.datos_producto_section .datos_producto_section_portada div a {
+    color: #e60012;
+    font-size: 30px;
+}
+
+.datos_producto_section .datos_producto_section_info {
+    width: 25% ;
+}
+
+.datos_producto_section .datos_producto_section_info h2{
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #484848;
+}
+
+.datos_producto_section .datos_producto_section_info h3{
+    font-size: 34px;
+    font-weight: 700;
+    color: #e60012;
+    margin-top: 20px;
+}
+
+.datos_producto_section .datos_producto_section_info p span{
+    color: #6AC0EB;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.datos_producto_section .datos_producto_section_info div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.datos_producto_section .datos_producto_section_info div input{
+    border-radius: 20px;
+    height: 50px;
+    width: 95px;
+    padding: 20px;
+    border: 1px solid #C8C8C8;
+}
+
+.datos_producto_section .datos_producto_section_info div button {
+    border-radius: 20px;
+    height: 65px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: #e60012;
+    color: white;
+    font-weight: bold;
+}
+
 
 
 
@@ -1035,6 +1104,25 @@ header {
     }
 
     
+    .datos_producto_section {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+
+    .datos_producto_section .datos_producto_section_info {
+        width: 90%;
+    }
+
+    .datos_producto_section .datos_producto_section_portada {
+        width: 100% ;
+        text-align: center;
+    }
+    
+    .datos_producto_section .datos_producto_section_portada img{
+        width: 100% ;
+    }
 }
 
 
@@ -1074,11 +1162,14 @@ header {
         "lista   logo      logo     carrito"
         "buscador buscador buscador buscador"
     }
+    
 
     .header_contendedor .header_buscador i {
         right: 30px;
         font-size: 20px;
     }
+
+
 
 
     .footer_contenedor {
