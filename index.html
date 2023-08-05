@@ -76,37 +76,37 @@
 
         <!-- CARRUSEL -->
         <section>
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./images/index/index_banner.webp" class="d-block w-100" alt="Zelda"/>
+                        <img src="./images/index/index_banner.webp" class="d-block w-100" alt="Zelda" />
                         <div class="carousel-caption d-none d-md-block banner_subtitulo">
                             <h5>The legend of Zelda</h5>
                             <p>Unete a la aventura junto al heroe legendario.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./images/index/pickmi_banner.webp" class="d-block w-100" alt="pikmin"/>
+                        <img src="./images/index/pickmi_banner.webp" class="d-block w-100" alt="pikmin" />
                         <div class="carousel-caption d-none d-md-block banner_subtitulo">
                             <h5>Pikmin</h5>
                             <p>Explora el planeta de los pequeños pikmins.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/index/amibo_banner.webp" class="d-block w-100" alt="amibo"/>
+                        <img src="./images/index/amibo_banner.webp" class="d-block w-100" alt="amibo" />
                         <div class="carousel-caption d-none d-md-block banner_subtitulo">
                             <h5>Amibos</h5>
                             <p>Colecciona y sorprendete con nuestros amibos.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/index/splatoon_banner.webp" class="d-block w-100" alt="splatoon"/>
+                        <img src="./images/index/splatoon_banner.webp" class="d-block w-100" alt="splatoon" />
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/index/switch_banner.webp" class="d-block w-100" alt="switch"/>
+                        <img src="./images/index/switch_banner.webp" class="d-block w-100" alt="switch" />
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/index/mario_banner.webp" class="d-block w-100" alt="mario"/>
+                        <img src="./images/index/mario_banner.webp" class="d-block w-100" alt="mario" />
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -120,7 +120,6 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            
         </section>
 
         <!-- HERO -->
@@ -164,18 +163,28 @@
 
         <!-- MARCAS -->
 
-        <section class="marcas_section" id="marcas">
-            <div class="marcas_scroll">
-                <img src="./images/index/marcas/marca_3ds.webp" alt="3ds" />
-                <img src="./images/index/marcas/marca_amibo.webp" alt="amibo" />
-                <img src="./images/index/marcas/marca_ds.webp" alt="ds" />
-                <img src="./images/index/marcas/marca_eshop.webp" alt="eshop" />
-                <img src="./images/index/marcas/marca_kirby.webp" alt="kirby" />
-                <img src="./images/index/marcas/marca_lego.webp" alt="lego" />
-                <img src="./images/index/marcas/marca_ps.webp" alt="ps" />
-                <img src="./images/index/marcas/marca_psvita.webp" alt="psvita" />
-                <img src="./images/index/marcas/marca_retro.webp" alt="retro" />
-                <img src="./images/index/marcas/marca_zelda.webp" alt="zelda" />
+        <section class="marcas_section marcas_1" id="marcas">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <div class="carrusel_container">
+                            <img class="carrusel_img" src="./images/index/marcas/marca_3ds.webp" alt="3ds"/>
+                            <img class="carrusel_img" src="./images/index/marcas/marca_amibo.webp" alt="amibo"/>
+                            <img class="carrusel_img" src="./images/index/marcas/marca_ds.webp" alt="ds"/>
+                            <img class="carrusel_img" src="./images/index/marcas/marca_eshop.webp" alt="eshop"/>
+                            <img class="carrusel_img" src="./images/index/marcas/marca_kirby.webp" alt="kirby"/>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="carrusel_container">
+                            <img class="carrusel_img" src="./images/index/marcas/marca_lego.webp" alt="lego"/>
+                            <img class="carrusel_img" src="./images/index/marcas/marca_ps.webp" alt="ps"/>
+                            <img class="carrusel_img" src="./images/index/marcas/marca_psvita.webp" alt="psvita"/>
+                            <img class="carrusel_img" src="./images/index/marcas/marca_retro.webp" alt="retro"/>
+                            <img class="carrusel_img" src="./images/index/marcas/marca_zelda.webp" alt="zelda"/>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -183,49 +192,57 @@
         <section class="novedades_section" id="novedades">
             <h2>Novedades</h2>
             <div class="novedades_scroll">
-                <div class="novedades_tarjeta">
-                    <img src="./images/index/juegos/juego_chrono.png" alt="chrono" />
-                    <div class="novedades_linea"></div>
-                    <div>
-                        <p>
-                            Chrono Cross: The radicalDreamers - Nintendo switch
-                        </p>
-                        <h3>35.640$</h3>
+                <a href="./pages/producto_the_last_of_us.html">
+                    <div class="novedades_tarjeta">
+                        <img src="./images/index/juegos/juego_the_last_o_us.png" alt="chrono" />
+                        <div class="novedades_linea"></div>
+                        <div>
+                            <p>
+                                The Last of Us 2 - PS4
+                            </p>
+                            <h3>26.458$</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="novedades_tarjeta">
-                    <img src="./images/index/juegos/juego_fire.png" alt="chrono" />
-                    <div class="novedades_linea"></div>
-                    <div>
-                        <p>
-                            Fire Emblem Warriors: Three Hopes - Nintendo Switch
-                        </p>
-                        <h3>36.850$</h3>
+                <a href="./pages/producto_ps_5.html">
+                    <div class="novedades_tarjeta">
+                        <img src="./images/index/juegos/consola_ps5.png" alt="ps5" />
+                        <div class="novedades_linea"></div>
+                        <div>
+                            <p>
+                                Sony PlayStation 5 825GB Standard - PS5
+                            </p>
+                            <h3>500.514$</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="novedades_tarjeta">
-                    <img src="./images/index/juegos/juego_pokemon_pack.png" alt="chrono" />
-                    <div class="novedades_linea"></div>
-                    <div>
-                        <p>
-                            Pokemon Sword and Pokemon Shield Double Pack - Nintendo Switch
-                        </p>
-                        <h3>98.450$</h3>
+                <a href="./pages/producto_poke_sword.html">
+                    <div class="novedades_tarjeta">
+                        <img src="./images/index/juegos/juego_pokemon_pack.png" alt="chrono" />
+                        <div class="novedades_linea"></div>
+                        <div>
+                            <p>
+                                Pokemon Sword and Pokemon Shield Double Pack - Nintendo Switch
+                            </p>
+                            <h3>98.450$</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="novedades_tarjeta">
-                    <img src="./images/index/juegos/juego_fox.png" alt="chrono" />
-                    <div class="novedades_linea"></div>
-                    <div>
-                        <p>
-                            StarFox ZERO - Wii U
-                        </p>
-                        <h3>31.350$</h3>
+                <a href="./pages/producto_ps_vita.html">
+                    <div class="novedades_tarjeta">
+                        <img src="./images/index/juegos/consola_psvita.png" alt="psvita" />
+                        <div class="novedades_linea"></div>
+                        <div>
+                            <p>
+                                PS VITA WiFi SLIM WHITE
+                            </p>
+                            <h3>511.426$</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
 
                 <div class="novedades_tarjeta">
                     <img src="./images/index/juegos/juego_zelda.png" alt="chrono" />
@@ -238,16 +255,18 @@
                     </div>
                 </div>
 
-                <div class="novedades_tarjeta">
-                    <img src="./images/index/juegos/juego_street.png" alt="chrono" />
-                    <div class="novedades_linea"></div>
-                    <div>
-                        <p>
-                            Streets of Rage 4 - Anniversary Edition - Nintendo Switch
-                        </p>
-                        <h3>21.532,50$</h3>
+                <a href="./pages/producto.html">
+                    <div class="novedades_tarjeta">
+                        <img src="./images/index/juegos/juego_street.png" alt="street" />
+                        <div class="novedades_linea"></div>
+                        <div>
+                            <p>
+                                Streets of Rage 4 - Anniversary Edition - Nintendo Switch
+                            </p>
+                            <h3>21.532,50$</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
 

@@ -284,7 +284,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 380px;
-    margin-top: 20px;
+    margin: 20px 5px 20px 5px;
 }
 
 .sugerencias_section .sugerencias_tarjeta div {
@@ -309,38 +309,25 @@ header {
 
 .marcas_section   {
     background-color: #dbd9d9;
-    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.marcas_section .marcas_scroll  {
+.carrusel_container {
+    width: 100%;
+    overflow: hidden;
     display: flex;
-    align-items: center;
-    width: 95%;
-    overflow-x: scroll;
-    padding: 5px;
+    justify-content: center;
+    flex-wrap:wrap;
 }
 
-::-webkit-scrollbar  {
-    height: 8px;
-    background-color: rgba(0, 0, 0, 0.126);
-}
-
-::-webkit-scrollbar-thumb  { 
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover  {
-    background-color: rgba(0, 0, 0, 0.3); 
+.carrusel_img {
+    margin: 10px;
+    width: 250px;
 }
 
 
-.marcas_section .marcas_scroll img {
-    width: 200px;
-    margin: 0px 20px 0px 20px;
-}
 
 
 /*! NOVEDADES */
@@ -377,6 +364,7 @@ header {
     margin: 0px 20px 0px 20px;
 }
 
+
 .novedades_section .novedades_scroll .novedades_tarjeta:hover {
     box-shadow: 0 0 10px #00000080;
 }
@@ -394,6 +382,7 @@ header {
 
 .novedades_section .novedades_scroll .novedades_tarjeta div p {
     padding: 10px;
+    color: #929292
 }
 
 .novedades_section .novedades_scroll .novedades_tarjeta div h3 {
@@ -537,6 +526,7 @@ header {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    padding: 5px;
 }
 
 .formulario_section div form input{
@@ -809,7 +799,7 @@ header {
     grid-area: pruductos;
     padding: 0px 30px 30px 30px;
     display: flex;
-    justify-content:space-around;
+    justify-content:flex-start;
     flex-wrap: wrap;
 }
 
@@ -822,8 +812,8 @@ header {
     border: solid 1px #e4e4e4;
     border-radius: 30px;
     width: 280px;
-    margin-bottom: 20px;
-    height: 400px;
+    margin: 20px 20px 0px 20px;
+    height: auto;
 }
 
 .nintendo_pruductos_section .pruductos_tarjeta:hover {
@@ -884,7 +874,13 @@ header {
 .datos_producto_section .datos_producto_section_portada {
     width: 60% ;
     padding: 20px;
+    text-align: center;
 }
+
+.datos_producto_section .datos_producto_section_portada div{
+    text-align: left;
+}
+
 
 
 .datos_producto_section .datos_producto_section_portada div a {
@@ -894,6 +890,10 @@ header {
 
 .datos_producto_section .datos_producto_section_info {
     width: 25% ;
+}
+
+.datos_producto_section .datos_producto_section_info ol li a {
+    color: rgb(197, 196, 196);
 }
 
 .datos_producto_section .datos_producto_section_info h2{
@@ -925,15 +925,17 @@ header {
 .datos_producto_section .datos_producto_section_info div input{
     border-radius: 20px;
     height: 50px;
-    width: 95px;
+    width: 30%;
     padding: 20px;
     border: 1px solid #C8C8C8;
+    margin-right: 10px;
+    text-align: center;
 }
 
 .datos_producto_section .datos_producto_section_info div button {
     border-radius: 20px;
     height: 65px;
-    width: 150px;
+    width: 60%;
     padding: 10px;
     border: none;
     background-color: #e60012;
@@ -960,6 +962,7 @@ header {
     box-shadow: 10px 10px 19px -3px rgba(0,0,0,0.58);
         -webkit-box-shadow: 10px 10px 19px -3px rgba(0,0,0,0.58);
         -moz-box-shadow: 10px 10px 19px -3px rgba(0,0,0,0.58);
+    z-index: 100;
 }
 
 .icono_whatsapp i {
