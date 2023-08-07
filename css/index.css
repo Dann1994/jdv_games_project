@@ -1321,4 +1321,12 @@ header {
         height: 50px;
     }
 
+    .grid_contenedor_porductos .producto_pruductos_section  {
+        justify-content: center;
+    }
+
+    .producto_pruductos_section .pruductos_tarjeta {
+        width: 200px;
+    }
+
 }
