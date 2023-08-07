@@ -106,34 +106,17 @@ header {
 
 .header_contendedor .header_logo {
     grid-area: logo;
-    display: flex;
-    align-items: center;
-}
-
-.header_contendedor .header_logo:hover {
-    zoom: 1.01;
-    cursor: pointer;
 }
 
 .header_contendedor .header_logo img {
-    width: 80px;
+    width: 100%;
 }
 
-.header_contendedor .header_logo h1 {
-    margin-right: 5px;
-    color: white;
-    display: flex;
-    align-items: center;
-}
 
-.header_contendedor .header_logo h1 i {
-    margin-right: 5px;
-    color: white;
-    font-size: 50px;
-    display: inline-block; /* Asegura que ocupe solo el espacio necesario */
-    transform: rotate(30deg);
-    margin-left: 5px;
-}
+
+
+
+
 
 /***********************************************/
 
@@ -1075,13 +1058,7 @@ header {
 
 
 @media screen and (max-width: 1350px) {
-    .header_contendedor .header_logo img {
-        width: 50px;
-    }
 
-    .header_contendedor .header_logo h1 {
-        font-size: 25px;
-    }
 
     .header_contendedor .header_cuenta ul li a {
         font-size: 15px;
@@ -1139,16 +1116,7 @@ header {
 }
 
 
-@media (max-width: 1050px) and (min-width: 900px) {
-    .header_contendedor .header_logo img {
-        width: 40px;
-    }
 
-    .header_contendedor .header_logo h1 {
-        font-size: 20px;
-    }
-
-}
 
 @media screen and (max-width: 900px) {
 
@@ -1248,13 +1216,6 @@ header {
 
 @media (max-width: 510px) {
 
-    .header_contendedor .header_logo h1 {
-        font-size: 20px;
-    }
-
-    .header_contendedor .header_logo h1 i {
-        font-size: 30px;
-    }
 
     .header_lista {
         font-size: 30px;
@@ -1277,16 +1238,6 @@ header {
         font-size: 15px;
     }
 
-    .header_contendedor .header_logo  {
-        padding: 0;
-    }
-    .header_contendedor .header_logo h1 {
-        font-size: 15px;
-    }
-
-    .header_contendedor .header_logo h1 i {
-        font-size: 25px;
-    }
 
     .sugerencias_section .sugerencias_tarjeta {
         width: 90vw;
