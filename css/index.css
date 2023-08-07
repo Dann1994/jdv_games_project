@@ -382,13 +382,14 @@ header {
 
 .novedades_section .novedades_scroll .novedades_tarjeta div p {
     padding: 10px;
-    color: #929292
+    color: #484848;
 }
 
 .novedades_section .novedades_scroll .novedades_tarjeta div h3 {
     color: #e60012;
     margin: 20px 0px 20px;
     font-size: 25px;
+    font-weight: bolder;
 }
 
 /*! OFERTA */
@@ -442,6 +443,7 @@ header {
 
 .ofertas_section .ofertas_scroll .ofertas_tarjeta div p {
     padding: 10px;
+    color: #484848;
 }
 
 .ofertas_section .ofertas_scroll .ofertas_tarjeta div div {
@@ -461,6 +463,7 @@ header {
     color: #e60012;
     margin: 20px 0px 20px;
     font-size: 25px;
+    font-weight: bolder;
 }
 
 
@@ -566,12 +569,12 @@ header {
 }
 
 
-/*? *******************NINTENDO*************************/
+/*? *******************PRODUCTOS*************************/
 
 
 /*! GRID */
 
-.grid_contenedor_nintendo {
+.grid_contenedor_porductos {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
@@ -584,25 +587,25 @@ header {
 }
 
 
-.grid_contenedor_nintendo .nintendo_grid_item {
+.grid_contenedor_porductos .producto_grid_item {
     margin: 0;
     width: 100%;
 }
 /*****************************************************/
 
 /*! BANNER */
-.grid_contenedor_nintendo .nintendo_banner_section {
+.grid_contenedor_porductos .producto_banner_section {
     grid-area: banner;
 }
 
-.nintendo_banner_section img {
+.producto_banner_section img {
     width: 100%;
 }
 
 /*****************************************************/
 
 /*! ORDEN */
-.grid_contenedor_nintendo .nintendo_orden_section {
+.grid_contenedor_porductos .producto_orden_section {
     grid-area: orden;
     display: flex;
     justify-content: space-between;
@@ -610,22 +613,22 @@ header {
     padding: 20px 50px 20px 50px;
 }
 
-.grid_contenedor_nintendo .nintendo_orden_section p{
+.grid_contenedor_porductos .producto_orden_section p{
     margin: 0;
     color: #3b3b3b;
 }
 
-.grid_contenedor_nintendo .nintendo_orden_section p a{
+.grid_contenedor_porductos .producto_orden_section p a{
     color:#929292;
 }
 
-.grid_contenedor_nintendo .nintendo_orden_section p a:hover{
+.grid_contenedor_porductos .producto_orden_section p a:hover{
     color:#e60012
 }
 
 
 
-.grid_contenedor_nintendo .nintendo_orden_section select {
+.grid_contenedor_porductos .producto_orden_section select {
     padding: 15px;
     border-radius: 15px;
     border: 1px #cccbcb solid;
@@ -634,18 +637,18 @@ header {
     font-size: 18px;
 }
 
-.grid_contenedor_nintendo .nintendo_orden_section select:hover {
+.grid_contenedor_porductos .producto_orden_section select:hover {
     border: #e60012 1px solid;
 }
 
-.grid_contenedor_nintendo .nintendo_orden_section select option {
+.grid_contenedor_porductos .producto_orden_section select option {
     color: #3b3b3b;
 }
 
 /**********************************************************/
 
 /*! FILTROS */
-.grid_contenedor_nintendo .nintendo_orden_section .nintendo_filtros_boton {
+.grid_contenedor_porductos .producto_orden_section .producto_filtros_boton {
     display: none;
     padding: 15px;
     border-radius: 15px;
@@ -662,17 +665,17 @@ header {
     padding-top: 150px;
 }
 
-.offcanvas-body .nintendo_filtros_sidebar_categorias ul li {
+.offcanvas-body .producto_filtros_sidebar_categorias ul li {
     margin-top: 25px;
 }
-.offcanvas-body .nintendo_filtros_sidebar_categorias ul li a {
+.offcanvas-body .producto_filtros_sidebar_categorias ul li a {
     color: #3b3b3b;
 }
-.offcanvas-body .nintendo_filtros_sidebar_categorias ul li a:hover {
+.offcanvas-body .producto_filtros_sidebar_categorias ul li a:hover {
     color:#e60012;
 }
 
-.offcanvas-body .nintendo_filtros_sidebar_color ul li {
+.offcanvas-body .producto_filtros_sidebar_color ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -681,22 +684,22 @@ header {
 }
 
 
-.offcanvas-body .nintendo_filtros_sidebar_color ul li input {
+.offcanvas-body .producto_filtros_sidebar_color ul li input {
     height: 25px;
     width: 25px;
 }
 
-.offcanvas-body .nintendo_filtros_sidebar_color ul li a{
+.offcanvas-body .producto_filtros_sidebar_color ul li a{
     margin: 0;
 }
 
 
-.nintendo_filtros_sidebar_precio div {
+.producto_filtros_sidebar_precio div {
     display: flex;
     margin-top: 0;
 }
 
-.nintendo_filtros_sidebar_precio div input {
+.producto_filtros_sidebar_precio div input {
     width: 45px;
     margin-right: 18px;
     padding: 5px;
@@ -704,34 +707,34 @@ header {
     border: #929292 1px solid;
 }
 
-.nintendo_filtros_sidebar_precio div i {
+.producto_filtros_sidebar_precio div i {
     color: #e60012;
     font-size: 25px;
 }
 
-.grid_contenedor_nintendo .nintendo_filtros_section {
+.grid_contenedor_porductos .producto_filtros_section {
     grid-area: filtros;
     padding-left: 40px;
 
 }
 
-.grid_contenedor_nintendo .nintendo_filtros_section div {
+.grid_contenedor_porductos .producto_filtros_section div {
     margin-top: 25px;
 }
 
-.nintendo_filtros_section .nintendo_filtros_categorias ul li {
+.producto_filtros_section .producto_filtros_categorias ul li {
     margin-top: 25px;
 }
 
-.nintendo_filtros_section .nintendo_filtros_categorias ul li a {
+.producto_filtros_section .producto_filtros_categorias ul li a {
     color: #3b3b3b;
 }
 
-.nintendo_filtros_section .nintendo_filtros_categorias ul li a:hover {
+.producto_filtros_section .producto_filtros_categorias ul li a:hover {
     color:#e60012;
 }
 
-.grid_contenedor_nintendo .nintendo_filtros_section .nintendo_filtros_color ul li {
+.grid_contenedor_porductos .producto_filtros_section .producto_filtros_color ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -739,16 +742,16 @@ header {
     width: 150px;
 }
 
-.grid_contenedor_nintendo .nintendo_filtros_section .nintendo_filtros_color ul li:hover {
+.grid_contenedor_porductos .producto_filtros_section .producto_filtros_color ul li:hover {
     color: #e60012;
 }
 
-.nintendo_filtros_color ul li input {
+.producto_filtros_color ul li input {
     height: 25px;
     width: 25px;
 }
 
-.nintendo_filtros_color ul li p{
+.producto_filtros_color ul li p{
     margin: 0;
 }
 
@@ -773,12 +776,12 @@ header {
 }
 
 
-.grid_contenedor_nintendo .nintendo_filtros_section .nintendo_filtros_precio div {
+.grid_contenedor_porductos .producto_filtros_section .producto_filtros_precio div {
     display: flex;
     margin-top: 0;
 }
 
-.grid_contenedor_nintendo .nintendo_filtros_section .nintendo_filtros_precio div input {
+.grid_contenedor_porductos .producto_filtros_section .producto_filtros_precio div input {
     width: 45px;
     margin-right: 18px;
     padding: 5px;
@@ -786,7 +789,7 @@ header {
     border: #929292 1px solid;
 }
 
-.grid_contenedor_nintendo .nintendo_filtros_section .nintendo_filtros_precio div i {
+.grid_contenedor_porductos .producto_filtros_section .producto_filtros_precio div i {
     color: #e60012;
     font-size: 25px;
 }
@@ -795,7 +798,7 @@ header {
 /*****************************************************/
 
 /*! PRODUCTOS */
-.grid_contenedor_nintendo .nintendo_pruductos_section {
+.grid_contenedor_porductos .producto_pruductos_section {
     grid-area: pruductos;
     padding: 0px 30px 30px 30px;
     display: flex;
@@ -804,7 +807,7 @@ header {
 }
 
 
-.nintendo_pruductos_section .pruductos_tarjeta {
+.producto_pruductos_section .pruductos_tarjeta {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -816,29 +819,31 @@ header {
     height: auto;
 }
 
-.nintendo_pruductos_section .pruductos_tarjeta:hover {
+.producto_pruductos_section .pruductos_tarjeta:hover {
     box-shadow: 0 0 10px #00000080;
 }
 
-.nintendo_pruductos_section .pruductos_tarjeta img {
+.producto_pruductos_section .pruductos_tarjeta img {
     border-radius: 30px 30px;
 }
 
 
-.nintendo_pruductos_section .pruductos_tarjeta .productos_linea {
+.producto_pruductos_section .pruductos_tarjeta .productos_linea {
     background-color: #e60012;
     height: 5px;
 }
 
 
-.nintendo_pruductos_section .pruductos_tarjeta div p {
+.producto_pruductos_section .pruductos_tarjeta div p {
     padding: 10px;
+    color: #484848;
 }
 
-.nintendo_pruductos_section .pruductos_tarjeta div h3 {
+.producto_pruductos_section .pruductos_tarjeta div h3 {
     color: #e60012;
     margin: 20px 0px 20px;
     font-size: 25px;
+    font-weight: bolder;
 }
 
 .porductos_mostrar_mas {
@@ -875,6 +880,10 @@ header {
     width: 60% ;
     padding: 20px;
     text-align: center;
+}
+
+.datos_producto_section .datos_producto_section_portada img {
+    width: auto;
 }
 
 .datos_producto_section .datos_producto_section_portada div{
@@ -994,6 +1003,7 @@ header {
 
 .footer_contenedor .footer_item h3 {
     margin: 20px 0px 20px;
+    font-weight: bolder;
 }
 
 .footer_contenedor .footer_item ul li {
@@ -1203,7 +1213,7 @@ header {
     }
 
 
-    .grid_contenedor_nintendo {
+    .grid_contenedor_porductos {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
         "banner     banner    banner   "
@@ -1212,26 +1222,26 @@ header {
         ;
     }
 
-    .nintendo_filtros_section {
+    .producto_filtros_section {
         display: none;
     }
 
-    .nintendo_orden_section {
+    .producto_orden_section {
         position: sticky;
         top: 180px;
         background-color: white;
         z-index: 0;
     }
 
-    .nintendo_orden_section select{
+    .producto_orden_section select{
         width: 200px;
     }
 
-    .nintendo_orden_section p {
+    .producto_orden_section p {
         display: none;
     }
 
-    .grid_contenedor_nintendo .nintendo_orden_section .nintendo_filtros_boton {
+    .grid_contenedor_porductos .producto_orden_section .producto_filtros_boton {
         display: flex;
     }
 }
@@ -1254,7 +1264,7 @@ header {
         font-size: 30px;
     }
 
-    .nintendo_orden_section select{
+    .producto_orden_section select{
         width: 150px;
     }
 
@@ -1298,16 +1308,16 @@ header {
         ;
     }
 
-    .nintendo_orden_section select{
+    .producto_orden_section select{
         width: 100px;
         height: 50px;
     }
 
-    .nintendo_orden_section select option{
+    .producto_orden_section select option{
         font-size: 7px;
     }
 
-    .grid_contenedor_nintendo .nintendo_orden_section .nintendo_filtros_boton {
+    .grid_contenedor_porductos .producto_orden_section .producto_filtros_boton {
         height: 50px;
     }
 

@@ -1,35 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/index/videojuegos_logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
-    <title>PC GAMING</title>
+    <title>The Legend of Zelda Link's Awakening - Nintendo Switch</title>
 </head>
+
 <body>
     <header>
         <div class="header_contendedor">
             <div class="header_item header_lista">
-                <i class="bi bi-list"></i>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item acordion_color">
+                        <h2 class="accordion-header ">
+                            <button class="acordion_boton" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="bi bi-list"></i>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse acordion_color"
+                            data-bs-parent="#accordionExample">
+                            <div class="acordion_lista">
+                                <ul>
+                                    <li><a href="../index.html" title="Inicio">INICIO</a></li>
+                                    <li><a href="./nintendo.html" title="Nintendo">NINTENDO</a></li>
+                                    <li><a href="./playstation.html" title="Playstation">PLAYSTATION</a></li>
+                                    <li><a href="./xbox.html" title="Xbox">XBOX</a></li>
+                                    <li><a href="./pc_gaming.html" title="PC Gaming">PC GAMING</a></li>
+                                </ul>
+                                <div class="accordion_usuario">
+                                    <i class="bi bi-person"></i>
+                                    <a>Crear cuenta</a>
+                                    <a>Iniciar sesión</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="header_item header_logo">
-                <h1>JDV GAMES</h1>
-                <img src="../images/index/videojuegos_logo.png" alt="logo" title="logo"/>  
+                <h1>JDV GAMES <i class="bi bi-controller"></i></h1>
             </div>
             <div class="header_item header_buscador">
                 <input type="text" name="buscador" placeholder="¿Qué estas buscando?">
-                <i class="bi bi-search" title="buscar"></i>
+
             </div>
             <div class="header_item header_cuenta">
                 <ul>
-                    <li><i class="bi bi-chat-left"></i><a href="" title="Ayuda" >Ayuda</a></li>
-                    <li><i class="bi bi-person"></i><a href="" title="Mi cuenta" >Mi cuenta</a></li>
-                    <li><i class="bi bi-cart3"></i><a href="" title="Mi carrito" >Mi carrito</a></li>
+                    <li><i class="bi bi-chat-left"></i><a href="" title="Ayuda">Ayuda</a></li>
+                    <li><i class="bi bi-person"></i><a href="" title="Mi cuenta">Mi cuenta</a></li>
+                    <li><i class="bi bi-cart3"></i><a href="" title="Mi carrito">Mi carrito</a></li>
                 </ul>
             </div>
             <div class="header_item header_carrito">
-                <i class="bi bi-cart3" title="Mi carrito" ></i>
+                <i class="bi bi-cart3" title="Mi carrito"></i>
             </div>
             <div class="header_item header_nav">
                 <ul>
@@ -43,9 +73,39 @@
         </div>
     </header>
     <main>
-        
+
+    <section class="datos_producto_section">
+        <div class="datos_producto_section_portada">
+            <img src="../images/index/juegos/juego_zelda.png" alt="juego"/>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook" title="Facebook"></i></a>
+                <a href="https://www.twitter.com/" target="_blank" title="Twitter"><i class="bi bi-twitter"
+                        title="Twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="bi bi-instagram"
+                        title="Instagram"></i></a>
+            </div>
+        </div>
+        <div class="datos_producto_section_info">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="../pages/nintendo.html">NINTENDO</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">The Legend of Zelda Link's Awakening - Nintendo Switch</li>
+                </ol>
+            </nav>
+            <h2>The Legend of Zelda Link's Awakening - Nintendo Switch</h2>
+            <h3>$45.425</h3>
+            <p><span><i class="bi bi-cash"></i> 5% de descuento</span> pagando con Efectivo</p>
+            <div>
+                <input type="number">
+                <button>AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+    </section>
+
     </main>
-    
+
     <!-- FOOTER -->
     <footer>
         <div class="icono_whatsapp" title="Whatsapp">
@@ -72,12 +132,12 @@
             <div class="footer_item footer_secciones">
                 <h3>SECCIONES</h3>
                 <ul>
-                    <li><a href="../index.html#hero">INICIO</a></li>
-                    <li><a href="../index.html#sugerencias">SUGERENCIAS</a></li>
-                    <li><a href="../index.html#novedades">NOVEDADES</a></li>
-                    <li><a href="../index.html#ofertas">OFERTAS</a></li>
-                    <li><a href="../index.html#medios_de_pago">MEDIOS DE PAGO</a></li>
-                    <li><a href="../index.html#consultas">CONSULTAS</a></li>
+                    <li><a href="#hero">INICIO</a></li>
+                    <li><a href="#sugerencias">SUGERENCIAS</a></li>
+                    <li><a href="#novedades">NOVEDADES</a></li>
+                    <li><a href="#ofertas">OFERTAS</a></li>
+                    <li><a href="#medios_de_pago">MEDIOS DE PAGO</a></li>
+                    <li><a href="#registrarse">REGISTRARSE</a></li>
                 </ul>
             </div>
             <div class="footer_item footer_contactanos">
