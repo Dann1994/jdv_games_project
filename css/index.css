@@ -112,12 +112,6 @@ header {
     width: 100%;
 }
 
-
-
-
-
-
-
 /***********************************************/
 
 .header_contendedor .header_buscador {
@@ -141,8 +135,6 @@ header {
     font-size: 40px;
     color: #e60012;
 }
-
-
 
 .header_contendedor .header_buscador input::placeholder {
     color: #e60012;
@@ -310,9 +302,6 @@ header {
     width: 250px;
 }
 
-
-
-
 /*! NOVEDADES */
 
 .novedades_section {
@@ -347,7 +336,6 @@ header {
     margin: 0px 20px 0px 20px;
 }
 
-
 .novedades_section .novedades_scroll .novedades_tarjeta:hover {
     box-shadow: 0 0 10px #00000080;
 }
@@ -361,7 +349,6 @@ header {
     background-color: #e60012;
     height: 5px;
 }
-
 
 .novedades_section .novedades_scroll .novedades_tarjeta div p {
     padding: 10px;
@@ -552,9 +539,7 @@ header {
     color: #e60012;
 }
 
-
 /*? *******************PRODUCTOS*************************/
-
 
 /*! GRID */
 
@@ -569,7 +554,6 @@ header {
     ;
     justify-items: center;
 }
-
 
 .grid_contenedor_porductos .producto_grid_item {
     margin: 0;
@@ -609,8 +593,6 @@ header {
 .grid_contenedor_porductos .producto_orden_section p a:hover{
     color:#e60012
 }
-
-
 
 .grid_contenedor_porductos .producto_orden_section select {
     padding: 15px;
@@ -676,7 +658,6 @@ header {
 .offcanvas-body .producto_filtros_sidebar_color ul li a{
     margin: 0;
 }
-
 
 .producto_filtros_sidebar_precio div {
     display: flex;
@@ -759,7 +740,6 @@ header {
     color: red;
 }
 
-
 .grid_contenedor_porductos .producto_filtros_section .producto_filtros_precio div {
     display: flex;
     margin-top: 0;
@@ -778,7 +758,6 @@ header {
     font-size: 25px;
 }
 
-
 /*****************************************************/
 
 /*! PRODUCTOS */
@@ -789,7 +768,6 @@ header {
     justify-content:flex-start;
     flex-wrap: wrap;
 }
-
 
 .producto_pruductos_section .pruductos_tarjeta {
     display: flex;
@@ -816,7 +794,6 @@ header {
     background-color: #e60012;
     height: 5px;
 }
-
 
 .producto_pruductos_section .pruductos_tarjeta div p {
     padding: 10px;
@@ -935,12 +912,6 @@ header {
     color: white;
     font-weight: bold;
 }
-
-
-
-
-
-
 
 /*! FOOTER */
 
@@ -1115,9 +1086,6 @@ header {
         width: 100% ;
     }
 }
-
-
-
 
 @media screen and (max-width: 900px) {
 
