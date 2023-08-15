@@ -1,0 +1,88 @@
+footer {
+    .icono_whatsapp {
+        i {
+            background-color: map-get($colores, Verde_whatsapp);
+            @include dimenciones_conf(50px, 50px);
+            @include flex_conf(center, center);
+            box-shadow: 10px 10px 19px -3px rgba(0,0,0,0.58);
+                -webkit-box-shadow: 10px 10px 19px -3px rgba(0,0,0,0.58);
+                -moz-box-shadow: 10px 10px 19px -3px rgba(0,0,0,0.58);
+            z-index: 100;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+            color: map-get($colores, Blanco_fondo);
+            font-size: 20px;
+        }
+    }
+    .footer_contenedor {
+        @include grid_conf(5);
+        grid-template-areas:
+        "nosotros categorias secciones contactanos redes"
+        "mapa     mapa       mapa      mapa        mapa"
+        "legal    legal      legal     legal       legal"
+        ;
+        .footer_item {
+            background-color: map-get($colores, Gris_fondo);
+            color: map-get($colores, Rojo_principal);
+            padding: 20px;
+            h3 {
+                margin: 20px 0px 20px;
+                font-weight: bolder;
+            }
+            ul {
+                li {
+                    margin: 25px 0px 25px;
+                    a {
+                        color: map-get($colores, Rojo_principal);
+                    }
+                }
+            }
+        }
+        .footer_nosotros {
+            grid-area: nosotros;
+        }
+        
+        .footer_categorias {
+            grid-area: categorias;
+        }
+        
+        .footer_secciones {
+            grid-area: secciones;
+        }
+        
+        .footer_contactanos {
+            grid-area: contactanos;
+        }
+
+        .footer_redes {
+            grid-area: redes;
+            i {
+                font-size: 30px;
+                color: map-get($colores, Rojo_principal);
+                margin: 5px;
+            }
+        }
+
+        .footer_mapa {
+            grid-area: mapa;
+            padding: 0;
+        }
+
+        .footer_legal {
+            grid-area: legal;
+            @include flex_conf(space-between);
+            font-size: 10px;
+            color: $color_secundario;
+            background-color: map-get($colores, Rojo_principal);
+            div {
+                a {
+                    color: map-get($colores, Blanco_fondo);
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}

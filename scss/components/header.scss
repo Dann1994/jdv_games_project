@@ -1,0 +1,143 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: map-get($colores, Rojo_principal);
+    padding-top: 15px;
+    .header_contendedor {
+        @include grid_conf(4);
+        grid-template-areas:
+        "logo buscador buscador cuenta"
+        "nav  nav      nav      nav";
+        .header_item {
+            @include flex_conf(center, center);
+            background-color:  map-get($colores, Rojo_principal) ;
+        }
+        .header_lista {
+            grid-area: lista;
+            display: none;
+            color: map-get($colores, Blanco_fondo);
+            font-size: 35px;
+        }
+        .header_carrito {
+            display: none;
+            justify-content: center;
+            color: map-get($colores, Blanco_fondo);
+            font-size: 35px;
+        }
+        .header_logo {
+            grid-area: logo;
+            a {
+                img {
+                    @include dimenciones_conf(auto, 100%);
+                }
+            }
+        }
+        .header_buscador {
+            grid-area: buscador;
+            height: 100px;
+            input {
+                @include input_conf(
+                    50%, 90%, 10px, none, 18px, 10px,
+                    map-get($colores, Rojo_principal),
+                    map-get($colores, Rojo_principal)
+                )
+            }
+        }
+        .header_cuenta {
+            grid-area: cuenta;
+            margin: 0;
+            ul {
+                @include flex_conf();
+                padding: 0;
+                margin: 0;
+                li {
+                    margin: 0px 15px 0px 15px;
+                    text-align: center;
+                    @include flex_conf(center, center, column);
+                    a {
+                        color: map-get($colores, Blanco_fondo);
+                        font-weight: bolder;
+                    }
+                    i {
+                        color: map-get($colores, Blanco_fondo);
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+        .offcanvas {
+            
+            .offcanvas-header {
+                background-color: map-get($colores, Rojo_principal );
+                h5 {
+                    color: map-get($colores, Blanco_fondo );
+                    font-size: 30px;
+                }
+                i {
+                    color: map-get($colores, Blanco_fondo );
+                    font-size: 30px;
+                }
+            }
+            .offcanvas-body {  
+                text-align: center;
+                .carrito_producto {
+                    @include flex_conf(space-around, center);
+                    img {
+                        @include dimenciones_conf(auto, 30%);
+                    }
+                    p {
+                        margin-top: 10px;
+                        @include dimenciones_conf(auto, 70%);
+                        align-self: self-start;
+                        text-align: center;
+                    }
+                    i {
+                        margin-top: 10px;
+                        align-self: self-start;
+                        font-size: 20px;
+                    }
+                }
+                .carrito_subtotal {
+                    @include flex_conf(space-between , center);
+                    p {
+                        font-weight: bolder;
+                    }
+                }
+                .carrito_total {
+                    @include flex_conf(space-between , center);
+                    p {
+                        font-weight: bolder;
+                        color: map-get($colores, Rojo_principal);
+                        font-size: 30px;
+                    }
+                }
+                button {
+                    @include boton_conf(
+                        map-get($colores, Rojo_principal),
+                        map-get($colores, Blanco_fondo),
+                        15px, 10px, 20px, auto, 90%
+                    );
+                }
+            }
+        }
+        
+        .header_nav {
+            grid-area: nav;
+            ul {
+                @include flex_conf();
+                li {
+                    margin: 5px 20px 5px 20px;
+                    a {
+                        color: map-get($colores, Blanco_fondo);
+                        font-weight: bolder;
+                        &:hover {
+                            font-weight:900;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

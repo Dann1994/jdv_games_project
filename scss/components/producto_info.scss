@@ -1,0 +1,63 @@
+.datos_producto_section {
+    @include flex_conf(center);
+    padding: 30px;
+    .datos_producto_section_portada {
+        @include dimenciones_conf(initial, 60%);
+        padding: 20px;
+        text-align: center;
+        img {
+            @include dimenciones_conf(initial, auto);
+        }
+        div{
+            text-align: left;
+            a {
+                color: $color_primario;
+                font-size: 30px;
+            }
+        }
+    }
+    .datos_producto_section_info {
+        @include dimenciones_conf(initial, 25%);
+        ol {
+            li {
+                a {
+                    color: map-get($colores, Gris_fondo)
+                }                
+            }
+        }
+        h2{
+            font-size: 34px;
+            font-weight: 700;
+            margin-top: 20px;
+            color: map-get($colores, Gris_h2);
+        }
+        h3{
+            font-size: 34px;
+            font-weight: 700;
+            color: $color_primario;
+            margin-top: 20px;
+        }
+        p {
+            span{
+                color: map-get($colores, Celeste_icono);
+                font-weight: bolder;
+                font-size: 20px;
+            }
+        }
+        div {
+            @include flex_conf(space-around, center);
+            input{
+                @include input_conf(
+                    50px, 30%, 20px,1px solid map-get($colores, Gris_fondo)
+                );
+            }
+            button {
+                @include boton_conf(
+                    map-get($colores, Rojo_principal),
+                    map-get($colores, Blanco_fondo),
+                    20px, 10px, initial, 65px, 60%
+                );
+            }
+        }
+    }
+}

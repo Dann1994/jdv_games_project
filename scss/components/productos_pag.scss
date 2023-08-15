@@ -1,0 +1,231 @@
+
+.grid_contenedor_porductos {
+    @include grid_conf(5);
+    grid-template-areas:
+    "banner  banner    banner     banner    banner   "
+    "orden   orden     orden      orden     orden    "
+    "filtros pruductos pruductos  pruductos pruductos"
+    ;
+    justify-items: center;
+
+    .producto_grid_item {
+        margin: 0;
+        width: 100%;
+    }
+
+    /*BANNER*/
+    .producto_banner_section {
+        grid-area: banner;
+        img {
+            width: 100%;
+        }
+    }
+
+    /*ORDEN*/
+    .producto_orden_section {
+        grid-area: orden;
+        @include flex_conf(space-between, center);
+        padding: 20px 50px 20px 50px;
+        p{
+            margin: 0;
+            color: #3b3b3b;
+            a{
+                color:#929292;
+                &:hover {
+                    color: $color_primario;
+                }
+            }
+        }
+        select {
+            padding: 15px;
+            border-radius: 15px;
+            border: 1px #cccbcb solid;
+            font-weight: bolder;
+            color: #3b3b3b;
+            font-size: 18px;
+            &:hover {
+                border: $color_primario 1px solid;
+            }
+            option {
+                color: #3b3b3b;
+            }
+        }
+        .producto_filtros_boton {
+            display: none;
+            padding: 15px;
+            border-radius: 15px;
+            border: 1px #cccbcb solid;
+            font-weight: bolder;
+            color: #3b3b3b;
+            font-size: 18px;
+            background-color: white;
+            margin-right: 5px;
+        }
+        .sidebar_filtros {
+            padding-top: 150px;
+        }
+        .offcanvas-body {
+            .producto_filtros_sidebar_categorias {
+                ul {
+                    li {
+                        margin-top: 25px;
+                        a {
+                            color: #3b3b3b;
+                            &:hover {
+                                color: $color_primario;
+                            }
+                        }
+                    }
+                }
+            }
+            .producto_filtros_sidebar_color {
+                ul {
+                    li {
+                        @include flex_conf(space-between, center);
+                        margin-top: 20px;
+                        width: 150px;
+                        input {
+                            height: 25px;
+                            width: 25px;
+                        }
+                        a{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .producto_filtros_sidebar_precio {
+                div {
+                    display: flex;
+                    margin-top: 0;
+                    input {
+                        width: 45px;
+                        margin-right: 18px;
+                        padding: 5px;
+                        border-radius: 5px;
+                        border: #929292 1px solid;
+                    }
+                    i {
+                        color:$color_primario;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*FILTROS*/
+    .producto_filtros_section {
+        grid-area: filtros;
+        padding-left: 40px;
+        div {
+            margin-top: 25px;
+        }
+        .producto_filtros_categorias {
+            ul {
+                li {
+                    margin-top: 25px;
+                    a {
+                        color: #3b3b3b;
+                        &:hover {
+                            color:$color_primario;
+                        }
+                    }
+                }
+            }
+        }
+        .producto_filtros_color {
+            ul {
+                li {
+                    @include flex_conf(space-between, center);
+                    margin-top: 20px;
+                    width: 150px;
+                    &:hover {
+                        color: $color_primario;
+                    }
+                    input {
+                        height: 25px;
+                        width: 25px;
+                    }
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .producto_filtros_precio {
+            div {
+                display: flex;
+                margin-top: 0;
+                input {
+                    width: 45px;
+                    margin-right: 18px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: #929292 1px solid;
+                }
+                i {
+                    color: $color_primario;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    /*PRODUCTOS*/
+    .producto_pruductos_section {
+        grid-area: pruductos;
+        padding: 0px 30px 30px 30px;
+        @include flex_conf(flex-start, center);
+        flex-wrap: wrap;
+        .pruductos_tarjeta {
+            @include flex_conf(space-between, initial, column);
+            text-align: center;
+            border: solid 1px #e4e4e4;
+            border-radius: 30px;
+            width: 280px;
+            margin: 20px 20px 0px 20px;
+            height: auto;
+            &:hover {
+                box-shadow: 0 0 10px #00000080;
+            }
+            img {
+                border-radius: 30px 30px;
+            }
+            .productos_linea {
+                background-color: $color_primario;
+                height: 5px;
+            }
+            div {
+                p {
+                    padding: 10px;
+                    color: #484848;
+                }
+                h3 {
+                    color: $color_primario;
+                    margin: 20px 0px 20px;
+                    font-size: 25px;
+                    font-weight: bolder;
+                }
+            }
+        }
+        .porductos_mostrar_mas {
+            width: 100%;
+            @include flex_conf(center);
+            padding: 20px;
+            button{
+                background-color: $color_primario;
+                color: white;
+                border: none;
+                padding: 20px;
+                font-size: 20px;
+                border-radius: 30px;
+                font-weight: bolder;
+                &:hover{
+                    background-color: #ec616c;
+                }
+            }
+        }
+    }
+
+}

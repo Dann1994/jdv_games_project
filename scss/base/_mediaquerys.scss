@@ -1,0 +1,218 @@
+@media screen and (max-width: 1350px) {
+
+
+    header .header_contendedor .header_item .header_cuenta ul li a {
+        font-size: 10px;
+    }
+    
+    .hero_section .hero_section_bienvenida h2 {
+        width: 50%;
+        font-size: 30px;
+    }
+
+    .hero_section .hero_section_bienvenida p {
+        padding: 10px;
+        width: 60%;
+        font-size: 1.8vw;
+    }
+
+    footer .footer_contenedor .footer_mapa {
+        display: none;
+    }
+
+    footer .footer_contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "nosotros      nosotros "
+        "categorias   secciones     "
+        "contactanos       redes "
+        "legal            legal    "
+        ;
+    }
+
+    
+    .datos_producto_section {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+
+    .datos_producto_section .datos_producto_section_info {
+        width: 90%;
+    }
+
+    .datos_producto_section .datos_producto_section_portada {
+        width: 100% ;
+        text-align: center;
+    }
+    
+    .datos_producto_section .datos_producto_section_portada img{
+        width: 100% ;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    header .header_contendedor .header_lista {
+        display: flex;
+        align-items: center;
+    }
+
+    header .header_contendedor .header_carrito {
+        display: flex;
+        align-items: center;
+    }
+
+    header .header_contendedor .header_cuenta {
+        display: none;
+    }
+
+    header .header_contendedor .header_nav {
+        display: none;
+    }
+
+    header .header_contendedor {
+        grid-template-areas:
+        "lista   logo      logo     carrito"
+        "buscador buscador buscador buscador"
+    }
+    
+
+    header .header_contendedor .header_buscador i {
+        right: 30px;
+        font-size: 20px;
+    }
+
+    .sugerencias_section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sugerencias_section .sugerencias_tarjeta {
+        
+        width: 90%;
+
+    }
+
+    .footer_contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "nosotros     nosotros    nosotros  "
+        "categorias   secciones   secciones    "
+        "contactanos  redes       redes"
+        "legal        legal       legal    "
+        ;
+    }
+
+    .footer_contenedor .footer_legal {
+        flex-direction: column;
+    }
+
+    .footer_contenedor .footer_legal div {
+        margin-top: 15px;
+    }
+
+    .hero_section .hero_section_bienvenida h2 {
+        width: 80%;
+        font-size: 25px;
+    }
+
+    .hero_section .hero_section_bienvenida p {
+        display: none;
+    }
+
+
+    .grid_contenedor_porductos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "banner     banner    banner   "
+        "orden      orden     orden    "
+        "pruductos  pruductos pruductos"
+        ;
+    }
+
+    .producto_filtros_section {
+        display: none;
+    }
+
+    .producto_orden_section {
+        position: sticky;
+        top: 180px;
+        background-color: white;
+        z-index: 0;
+    }
+
+    .producto_orden_section select{
+        width: 200px;
+    }
+
+    .producto_orden_section p {
+        display: none;
+    }
+
+    .grid_contenedor_porductos .producto_orden_section .producto_filtros_boton {
+        display: flex;
+    }
+}
+
+@media (max-width: 510px) {
+
+
+    header .header_lista {
+        font-size: 30px;
+    }
+
+    header .header_carrito {
+        font-size: 30px;
+    }
+
+    .producto_orden_section select{
+        width: 150px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    header .header_contendedor .header_buscador input {
+        font-size: 15px;
+    }
+
+    .sugerencias_section .sugerencias_tarjeta div h3 {
+        font-size: 30px;
+    }
+
+    footer .footer_contenedor {
+        grid-template-columns: auto;
+        grid-template-areas:
+        "nosotros"
+        "categorias"   
+        "secciones"
+        "contactanos"  
+        "redes"
+        "legal"
+        ;
+    }
+
+    .grid_contenedor_porductos .producto_orden_section select{
+        width: 100px;
+        height: 50px;
+    }
+
+    .grid_contenedor_porductos .producto_orden_section select option{
+        font-size: 7px;
+    }
+
+    .grid_contenedor_porductos .producto_orden_section .producto_filtros_boton {
+        height: 50px;
+    }
+
+    .grid_contenedor_porductos .producto_pruductos_section  {
+        justify-content: center;
+    }
+
+    .grid_contenedor_porductos .producto_pruductos_section .pruductos_tarjeta {
+        width: 200px;
+    }
+
+}

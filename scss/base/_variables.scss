@@ -1,0 +1,60 @@
+$color_primario: #e60012;
+$color_secundario: white;
+
+
+$colores: (
+    "Rojo_principal"    :#e60012,
+    "Rojo_secundario"   :#CE2827  ,
+    "Blanco_fondo"      :#ffff    ,
+    "Gris_fondo"        :#dbd9d9  ,
+    "Negro_transparente":#000000a6,
+    "Gris_transparente" :#a39d9d5a,
+    "Gris_h2"           :#3b3b3b,
+    "Gris_subtitulo"    :#575656,
+    "Verde_whatsapp"    :#21b407,
+    "Celeste_icono"     :#6AC0EB,
+);
+
+
+
+@mixin dimenciones_conf($alto:initial, $ancho:initial) {
+    height: $alto;
+    width :  $ancho;
+}
+
+@mixin input_conf($alto:auto, $ancho:auto, $b_radius: initial, $border: 0px, $f_size: initial, $padding: initial, $l_color: initial, $ph_color: black) {
+    @include dimenciones_conf($alto, $ancho);
+    border-radius: $b_radius;
+    border: $border;
+    font-size: $f_size;
+    padding: $padding;
+    color: $l_color;
+    &::placeholder {
+        color: $ph_color;
+    }
+}
+
+@mixin boton_conf($bg_color, $l_color, $b_radius, $padding, $font_size, $alto, $ancho) {
+    background-color: $bg_color;
+    color: $l_color;
+    border-radius: $b_radius;
+    padding: $padding;
+    font-size: $font_size;
+    @include dimenciones_conf($alto, $ancho);
+    border: none;
+    text-align: center;
+    font-weight: bolder;
+}
+
+@mixin grid_conf($columnas) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    grid-template-rows: auto;
+}
+
+@mixin flex_conf($justify:initial, $aling:initial, $direction: none) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $aling;
+    flex-direction: $direction;
+}
