@@ -99,7 +99,10 @@ header {
       grid-area: logo; }
       header .header_contendedor .header_logo a img {
         height: auto;
-        width: 100%; }
+        width: 100%;
+        transition: transform .2s; }
+      header .header_contendedor .header_logo a:hover {
+        transform: scale(1.01); }
     header .header_contendedor .header_buscador {
       grid-area: buscador;
       height: 100px; }
@@ -202,7 +205,8 @@ header {
           margin: 5px 20px 5px 20px; }
           header .header_contendedor .header_nav ul li a {
             color: #ffff;
-            font-weight: bolder; }
+            font-weight: bolder;
+            transition-duration: 0.2s; }
             header .header_contendedor .header_nav ul li a:hover {
               font-weight: 900; }
 
@@ -383,9 +387,11 @@ footer .footer_contenedor {
       border-radius: 30px;
       height: initial;
       width: 280px;
-      margin: 0px 20px 0px 20px; }
+      margin: 0px 20px 0px 20px;
+      transition-duration: 1s; }
       .novedades_section .novedades_scroll .novedades_tarjeta:hover {
-        box-shadow: 0 0 10px #000000a6; }
+        box-shadow: 0 0 10px #000000a6;
+        transform: scale(1.01); }
       .novedades_section .novedades_scroll .novedades_tarjeta img {
         border-radius: 30px 30px; }
       .novedades_section .novedades_scroll .novedades_tarjeta .novedades_linea {
@@ -431,9 +437,11 @@ footer .footer_contenedor {
       border-radius: 30px;
       height: initial;
       width: 280px;
-      margin: 0px 20px 0px 20px; }
+      margin: 0px 20px 0px 20px;
+      transition-duration: 1s; }
       .ofertas_section .ofertas_scroll .ofertas_tarjeta:hover {
-        box-shadow: 0 0 10px #000000a6; }
+        box-shadow: 0 0 10px #000000a6;
+        transform: scale(1.01); }
       .ofertas_section .ofertas_scroll .ofertas_tarjeta img {
         border-radius: 30px 30px; }
       .ofertas_section .ofertas_scroll .ofertas_tarjeta .ofertas_linea {
@@ -676,9 +684,11 @@ footer .footer_contenedor {
       border-radius: 30px;
       width: 280px;
       margin: 20px 20px 0px 20px;
-      height: auto; }
+      height: auto;
+      transition-duration: 1s; }
       .grid_contenedor_porductos .producto_pruductos_section .pruductos_tarjeta:hover {
-        box-shadow: 0 0 10px #00000080; }
+        box-shadow: 0 0 10px #000000a6;
+        transform: scale(1.01); }
       .grid_contenedor_porductos .producto_pruductos_section .pruductos_tarjeta img {
         border-radius: 30px 30px; }
       .grid_contenedor_porductos .producto_pruductos_section .pruductos_tarjeta .productos_linea {

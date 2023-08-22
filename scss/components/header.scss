@@ -30,6 +30,10 @@ header {
             a {
                 img {
                     @include dimenciones_conf(auto, 100%);
+                    transition: transform .2s;
+                }
+                &:hover {
+                    transform: scale(1.01);
                 }
             }
         }
@@ -131,6 +135,7 @@ header {
                     a {
                         color: map-get($colores, Blanco_fondo);
                         font-weight: bolder;
+                        transition-duration: 0.2s;
                         &:hover {
                             font-weight:900;
                         }
@@ -138,6 +143,5 @@ header {
                 }
             }
         }
-        
     }
 }

@@ -186,8 +186,10 @@
             width: 280px;
             margin: 20px 20px 0px 20px;
             height: auto;
+            transition-duration: 1s;
             &:hover {
-                box-shadow: 0 0 10px #00000080;
+                box-shadow: 0 0 10px map-get($colores, Negro_transparente);
+                transform: scale(1.01);
             }
             img {
                 border-radius: 30px 30px;

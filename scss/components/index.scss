@@ -104,8 +104,10 @@
             border-radius: 30px;
             @include dimenciones_conf(initial, 280px);
             margin: 0px 20px 0px 20px;
+            transition-duration: 1s;
             &:hover {
                 box-shadow: 0 0 10px map-get($colores, Negro_transparente);
+                transform: scale(1.01);
             }
             img {
                 border-radius: 30px 30px;
@@ -125,6 +127,7 @@
                     font-size: 25px;
                     font-weight: bolder;
                 }
+                
             }
         }
     }
@@ -151,9 +154,10 @@
             border: solid 1px map-get($colores, Gris_fondo);
             border-radius: 30px;
             @include dimenciones_conf(initial, 280px);
-            margin: 0px 20px 0px 20px;
+            margin: 0px 20px 0px 20px;transition-duration: 1s;
             &:hover {
                 box-shadow: 0 0 10px map-get($colores, Negro_transparente);
+                transform: scale(1.01);
             }
             img {
                 border-radius: 30px 30px;
