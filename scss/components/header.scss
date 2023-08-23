@@ -122,6 +122,10 @@ header {
                         map-get($colores, Blanco_fondo),
                         15px, 10px, 20px, auto, 90%
                     );
+                    transition: 0.3s;
+                    &:hover{
+                        background-color: #ec616c;
+                    }
                 }
             }
         }

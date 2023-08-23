@@ -58,3 +58,45 @@ $colores: (
     align-items: $aling;
     flex-direction: $direction;
 }
+
+
+%tarjeta {
+    @include flex_conf(space-around, initial, column);
+    text-align: center;
+    border: solid 1px map-get($colores, Gris_fondo);
+    border-radius: 30px;
+    @include dimenciones_conf(initial, 280px);
+    margin: 0px 20px 0px 20px;transition-duration: 1s;
+    &:hover {
+        box-shadow: 0 0 10px map-get($colores, Negro_transparente);
+        transform: scale(1.01);
+    }
+    img {
+        border-radius: 30px 30px;
+    }
+    .tarjeta_linea {
+        background-color: map-get($colores, Rojo_principal);
+        height: 5px;
+    }
+    div {
+        p {
+            padding: 10px;
+            color: map-get($colores, Gris_subtitulo);
+        }
+        div {
+            @include flex_conf(center, center);
+            h4 {
+                color: map-get($colores, Gris_subtitulo);
+                margin: 20px 5px 20px;
+                font-size: 15px;
+                text-decoration: line-through;
+            }
+            h3 {
+                color: map-get($colores, Rojo_principal);
+                margin: 20px 0px 20px;
+                font-size: 25px;
+                font-weight: bolder;
+            }
+        }
+    }
+}

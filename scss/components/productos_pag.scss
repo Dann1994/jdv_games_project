@@ -178,38 +178,8 @@
         padding: 0px 30px 30px 30px;
         @include flex_conf(flex-start, center);
         flex-wrap: wrap;
-        .pruductos_tarjeta {
-            @include flex_conf(space-between, initial, column);
-            text-align: center;
-            border: solid 1px #e4e4e4;
-            border-radius: 30px;
-            width: 280px;
-            margin: 20px 20px 0px 20px;
-            height: auto;
-            transition-duration: 1s;
-            &:hover {
-                box-shadow: 0 0 10px map-get($colores, Negro_transparente);
-                transform: scale(1.01);
-            }
-            img {
-                border-radius: 30px 30px;
-            }
-            .productos_linea {
-                background-color: $color_primario;
-                height: 5px;
-            }
-            div {
-                p {
-                    padding: 10px;
-                    color: #484848;
-                }
-                h3 {
-                    color: $color_primario;
-                    margin: 20px 0px 20px;
-                    font-size: 25px;
-                    font-weight: bolder;
-                }
-            }
+        .tarjeta {
+            @extend %tarjeta;
         }
         .porductos_mostrar_mas {
             width: 100%;
@@ -223,6 +193,7 @@
                 font-size: 20px;
                 border-radius: 30px;
                 font-weight: bolder;
+                transition: 0.3s;
                 &:hover{
                     background-color: #ec616c;
                 }

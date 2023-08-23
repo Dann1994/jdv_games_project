@@ -63,23 +63,37 @@
 .marcas_section   {
     background-color: map-get($colores, Gris_fondo);
     @include flex_conf(center, center);
-    .carousel {
-        .carousel-inner {
-            .carousel-item {
-                .carrusel_container {
-                    @include dimenciones_conf(initial, 100%);
-                    overflow: hidden;
-                    @include flex_conf(center);
-                    flex-wrap:wrap;
-                    .carrusel_img {
-                        margin: 10px;
-                        @include dimenciones_conf(initial, 250px);
-                    }
-                }
+    padding: 20px;
+
+    .marcas_continer {
+        display: flex;
+        width: 95%;
+        overflow-x: hidden;
+        .carrusel_container {
+            display: flex;
+            animation-name: desplazar;
+            animation-duration: 40s;
+            animation-direction: initial;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            img {
+                margin: 10px;
+                width: 300px;
             }
         }
     }
 }
+
+@keyframes desplazar {
+    0% {
+        translate: 0;
+    }
+    100% {
+        translate: -3200px
+    }
+}
+
+
 
 /*NOVEDADES*/
 .novedades_section {
@@ -96,39 +110,8 @@
         padding: 5px;
         overflow: auto;
         -webkit-overflow-scrolling: touch;
-        .novedades_tarjeta {
-            scroll-snap-align: start;
-            @include flex_conf(space-around, initial, column);
-            text-align: center;
-            border: solid 1px map-get($colores, Gris_fondo);
-            border-radius: 30px;
-            @include dimenciones_conf(initial, 280px);
-            margin: 0px 20px 0px 20px;
-            transition-duration: 1s;
-            &:hover {
-                box-shadow: 0 0 10px map-get($colores, Negro_transparente);
-                transform: scale(1.01);
-            }
-            img {
-                border-radius: 30px 30px;
-            }
-            .novedades_linea {
-                background-color: map-get($colores, Rojo_principal);
-                height: 5px;
-            }
-            div {
-                p {
-                    padding: 10px;
-                    color: map-get($colores, Gris_subtitulo);
-                }
-                h3 {
-                    color: map-get($colores, Rojo_principal);
-                    margin: 20px 0px 20px;
-                    font-size: 25px;
-                    font-weight: bolder;
-                }
-                
-            }
+        .tarjeta {
+            @extend %tarjeta;
         }
     }
 }
@@ -148,45 +131,8 @@
         @include dimenciones_conf(initial, 90%);
         padding: 5px;
         overflow-x: scroll;
-        .ofertas_tarjeta {
-            @include flex_conf(space-around, initial, column);
-            text-align: center;
-            border: solid 1px map-get($colores, Gris_fondo);
-            border-radius: 30px;
-            @include dimenciones_conf(initial, 280px);
-            margin: 0px 20px 0px 20px;transition-duration: 1s;
-            &:hover {
-                box-shadow: 0 0 10px map-get($colores, Negro_transparente);
-                transform: scale(1.01);
-            }
-            img {
-                border-radius: 30px 30px;
-            }
-            .ofertas_linea {
-                background-color: map-get($colores, Rojo_principal);
-                height: 5px;
-            }
-            div {
-                p {
-                    padding: 10px;
-                    color: map-get($colores, Gris_subtitulo);
-                }
-                div {
-                    @include flex_conf(center, center);
-                    h4 {
-                        color: map-get($colores, Gris_subtitulo);
-                        margin: 20px 5px 20px;
-                        font-size: 15px;
-                        text-decoration: line-through;
-                    }
-                    h3 {
-                        color: map-get($colores, Rojo_principal);
-                        margin: 20px 0px 20px;
-                        font-size: 25px;
-                        font-weight: bolder;
-                    }
-                }
-            }
+        .tarjeta {
+            @extend %tarjeta;
         }
     }
 }

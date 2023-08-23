@@ -1,5 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+.novedades_section .novedades_scroll .tarjeta, .ofertas_section .ofertas_scroll .tarjeta, .grid_contenedor_porductos .producto_pruductos_section .tarjeta {
+  display: flex;
+  justify-content: space-around;
+  align-items: initial;
+  flex-direction: column;
+  text-align: center;
+  border: solid 1px #dbd9d9;
+  border-radius: 30px;
+  height: initial;
+  width: 280px;
+  margin: 0px 20px 0px 20px;
+  transition-duration: 1s; }
+  .novedades_section .novedades_scroll .tarjeta:hover, .ofertas_section .ofertas_scroll .tarjeta:hover, .grid_contenedor_porductos .producto_pruductos_section .tarjeta:hover {
+    box-shadow: 0 0 10px #000000a6;
+    transform: scale(1.01); }
+  .novedades_section .novedades_scroll .tarjeta img, .ofertas_section .ofertas_scroll .tarjeta img, .grid_contenedor_porductos .producto_pruductos_section .tarjeta img {
+    border-radius: 30px 30px; }
+  .novedades_section .novedades_scroll .tarjeta .tarjeta_linea, .ofertas_section .ofertas_scroll .tarjeta .tarjeta_linea, .grid_contenedor_porductos .producto_pruductos_section .tarjeta .tarjeta_linea {
+    background-color: #e60012;
+    height: 5px; }
+  .novedades_section .novedades_scroll .tarjeta div p, .ofertas_section .ofertas_scroll .tarjeta div p, .grid_contenedor_porductos .producto_pruductos_section .tarjeta div p {
+    padding: 10px;
+    color: #575656; }
+  .novedades_section .novedades_scroll .tarjeta div div, .ofertas_section .ofertas_scroll .tarjeta div div, .grid_contenedor_porductos .producto_pruductos_section .tarjeta div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none; }
+    .novedades_section .novedades_scroll .tarjeta div div h4, .ofertas_section .ofertas_scroll .tarjeta div div h4, .grid_contenedor_porductos .producto_pruductos_section .tarjeta div div h4 {
+      color: #575656;
+      margin: 20px 5px 20px;
+      font-size: 15px;
+      text-decoration: line-through; }
+    .novedades_section .novedades_scroll .tarjeta div div h3, .ofertas_section .ofertas_scroll .tarjeta div div h3, .grid_contenedor_porductos .producto_pruductos_section .tarjeta div div h3 {
+      color: #e60012;
+      margin: 20px 0px 20px;
+      font-size: 25px;
+      font-weight: bolder; }
+
 /*RESET*/
 * {
   padding: 0;
@@ -193,7 +232,10 @@ header {
         width: 90%;
         border: none;
         text-align: center;
-        font-weight: bolder; }
+        font-weight: bolder;
+        transition: 0.3s; }
+        header .header_contendedor .offcanvas .offcanvas-body button:hover {
+          background-color: #ec616c; }
     header .header_contendedor .header_nav {
       grid-area: nav; }
       header .header_contendedor .header_nav ul {
@@ -340,20 +382,28 @@ footer .footer_contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: none; }
-  .marcas_section .carousel .carousel-inner .carousel-item .carrusel_container {
-    height: initial;
-    width: 100%;
-    overflow: hidden;
+  flex-direction: none;
+  padding: 20px; }
+  .marcas_section .marcas_continer {
     display: flex;
-    justify-content: center;
-    align-items: initial;
-    flex-direction: none;
-    flex-wrap: wrap; }
-    .marcas_section .carousel .carousel-inner .carousel-item .carrusel_container .carrusel_img {
-      margin: 10px;
-      height: initial;
-      width: 250px; }
+    width: 95%;
+    overflow-x: hidden; }
+    .marcas_section .marcas_continer .carrusel_container {
+      display: flex;
+      animation-name: desplazar;
+      animation-duration: 40s;
+      animation-direction: initial;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+      .marcas_section .marcas_continer .carrusel_container img {
+        margin: 10px;
+        width: 300px; }
+
+@keyframes desplazar {
+  0% {
+    translate: 0; }
+  100% {
+    translate: -3200px; } }
 
 /*NOVEDADES*/
 .novedades_section {
@@ -376,35 +426,6 @@ footer .footer_contenedor {
     padding: 5px;
     overflow: auto;
     -webkit-overflow-scrolling: touch; }
-    .novedades_section .novedades_scroll .novedades_tarjeta {
-      scroll-snap-align: start;
-      display: flex;
-      justify-content: space-around;
-      align-items: initial;
-      flex-direction: column;
-      text-align: center;
-      border: solid 1px #dbd9d9;
-      border-radius: 30px;
-      height: initial;
-      width: 280px;
-      margin: 0px 20px 0px 20px;
-      transition-duration: 1s; }
-      .novedades_section .novedades_scroll .novedades_tarjeta:hover {
-        box-shadow: 0 0 10px #000000a6;
-        transform: scale(1.01); }
-      .novedades_section .novedades_scroll .novedades_tarjeta img {
-        border-radius: 30px 30px; }
-      .novedades_section .novedades_scroll .novedades_tarjeta .novedades_linea {
-        background-color: #e60012;
-        height: 5px; }
-      .novedades_section .novedades_scroll .novedades_tarjeta div p {
-        padding: 10px;
-        color: #575656; }
-      .novedades_section .novedades_scroll .novedades_tarjeta div h3 {
-        color: #e60012;
-        margin: 20px 0px 20px;
-        font-size: 25px;
-        font-weight: bolder; }
 
 /*OFERTAS*/
 .ofertas_section {
@@ -427,44 +448,6 @@ footer .footer_contenedor {
     width: 90%;
     padding: 5px;
     overflow-x: scroll; }
-    .ofertas_section .ofertas_scroll .ofertas_tarjeta {
-      display: flex;
-      justify-content: space-around;
-      align-items: initial;
-      flex-direction: column;
-      text-align: center;
-      border: solid 1px #dbd9d9;
-      border-radius: 30px;
-      height: initial;
-      width: 280px;
-      margin: 0px 20px 0px 20px;
-      transition-duration: 1s; }
-      .ofertas_section .ofertas_scroll .ofertas_tarjeta:hover {
-        box-shadow: 0 0 10px #000000a6;
-        transform: scale(1.01); }
-      .ofertas_section .ofertas_scroll .ofertas_tarjeta img {
-        border-radius: 30px 30px; }
-      .ofertas_section .ofertas_scroll .ofertas_tarjeta .ofertas_linea {
-        background-color: #e60012;
-        height: 5px; }
-      .ofertas_section .ofertas_scroll .ofertas_tarjeta div p {
-        padding: 10px;
-        color: #575656; }
-      .ofertas_section .ofertas_scroll .ofertas_tarjeta div div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: none; }
-        .ofertas_section .ofertas_scroll .ofertas_tarjeta div div h4 {
-          color: #575656;
-          margin: 20px 5px 20px;
-          font-size: 15px;
-          text-decoration: line-through; }
-        .ofertas_section .ofertas_scroll .ofertas_tarjeta div div h3 {
-          color: #e60012;
-          margin: 20px 0px 20px;
-          font-size: 25px;
-          font-weight: bolder; }
 
 /*MEDIOS DE PAGO*/
 .pagos_section {
@@ -674,34 +657,6 @@ footer .footer_contenedor {
     align-items: center;
     flex-direction: none;
     flex-wrap: wrap; }
-    .grid_contenedor_porductos .producto_pruductos_section .pruductos_tarjeta {
-      display: flex;
-      justify-content: space-between;
-      align-items: initial;
-      flex-direction: column;
-      text-align: center;
-      border: solid 1px #e4e4e4;
-      border-radius: 30px;
-      width: 280px;
-      margin: 20px 20px 0px 20px;
-      height: auto;
-      transition-duration: 1s; }
-      .grid_contenedor_porductos .producto_pruductos_section .pruductos_tarjeta:hover {
-        box-shadow: 0 0 10px #000000a6;
-        transform: scale(1.01); }
-      .grid_contenedor_porductos .producto_pruductos_section .pruductos_tarjeta img {
-        border-radius: 30px 30px; }
-      .grid_contenedor_porductos .producto_pruductos_section .pruductos_tarjeta .productos_linea {
-        background-color: #e60012;
-        height: 5px; }
-      .grid_contenedor_porductos .producto_pruductos_section .pruductos_tarjeta div p {
-        padding: 10px;
-        color: #484848; }
-      .grid_contenedor_porductos .producto_pruductos_section .pruductos_tarjeta div h3 {
-        color: #e60012;
-        margin: 20px 0px 20px;
-        font-size: 25px;
-        font-weight: bolder; }
     .grid_contenedor_porductos .producto_pruductos_section .porductos_mostrar_mas {
       width: 100%;
       display: flex;
@@ -716,7 +671,8 @@ footer .footer_contenedor {
         padding: 20px;
         font-size: 20px;
         border-radius: 30px;
-        font-weight: bolder; }
+        font-weight: bolder;
+        transition: 0.3s; }
         .grid_contenedor_porductos .producto_pruductos_section .porductos_mostrar_mas button:hover {
           background-color: #ec616c; }
 
