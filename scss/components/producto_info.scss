@@ -57,6 +57,10 @@
                     map-get($colores, Blanco_fondo),
                     20px, 10px, initial, 65px, 60%
                 );
+                transition: 0.3s;
+                &:hover{
+                    background-color: #ec616c;
+                }
             }
         }
     }

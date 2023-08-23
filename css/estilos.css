@@ -739,7 +739,10 @@ footer .footer_contenedor {
         width: 60%;
         border: none;
         text-align: center;
-        font-weight: bolder; }
+        font-weight: bolder;
+        transition: 0.3s; }
+        .datos_producto_section .datos_producto_section_info div button:hover {
+          background-color: #ec616c; }
 
 @media screen and (max-width: 1350px) {
   header .header_contendedor .header_item .header_cuenta ul li a {
