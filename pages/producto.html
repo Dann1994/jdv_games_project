@@ -35,8 +35,8 @@
                                 </ul>
                                 <div class="accordion_usuario">
                                     <i class="bi bi-person"></i>
-                                    <a>Crear cuenta</a>
-                                    <a>Iniciar sesión</a>
+                                    <a href="./registrarse.html">Crear cuenta</a>
+                                    <a href="./iniciar_sesion.html">Iniciar sesión</a>
                                 </div>
                             </div>
                         </div>
@@ -51,12 +51,32 @@
             </div>
             <div class="header_item header_buscador">
                 <input type="text" name="buscador" placeholder="¿Qué estas buscando?">
+                <i class="bi bi-search"></i>
             </div>
             <div class="header_item header_cuenta">
-                <ul>
-                    <li><i class="bi bi-chat-left"></i><a href="" title="Ayuda">Ayuda</a></li>
-                    <li>
-                        <i class="bi bi-person"></i><a href="" title="Mi cuenta">Mi cuenta</a>
+                <ul class="cuanta_nav">
+                    <li><i class="bi bi-chat-left"></i>
+                        <div class="dropdown">
+                            <a data-bs-toggle="dropdown" aria-expanded="false">
+                                Ayuda
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" ><i class="bi bi-whatsapp"></i> 5491160490507</a></li>
+                                <li><a class="dropdown-item" ><i class="bi bi-envelope"></i> info@jdv.com</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <i class="bi bi-person"></i>
+                        <div class="dropdown">
+                            <a data-bs-toggle="dropdown" aria-expanded="false">
+                                Mi cuenta
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./iniciar_sesion.html">Iniciar sesión</a></li>
+                                <li><a class="dropdown-item" href="./registrarse.html">Registrarse</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                         <i class="bi bi-cart3"></i>
@@ -95,7 +115,7 @@
             </div>
 
             <div class="header_item header_nav">
-                <ul>
+                <ul class="nav_bar">
                     <li><a href="../index.html" title="Inicio">INICIO</a></li>
                     <li><a href="./nintendo.html" title="Nintendo">NINTENDO</a></li>
                     <li><a href="./playstation.html" title="Playstation">PLAYSTATION</a></li>

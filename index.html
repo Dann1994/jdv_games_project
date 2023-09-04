@@ -45,8 +45,8 @@
                                 </ul>
                                 <div class="accordion_usuario">
                                     <i class="bi bi-person"></i>
-                                    <a>Crear cuenta</a>
-                                    <a>Iniciar sesión</a>
+                                    <a href="./pages/registrarse.html">Crear cuenta</a>
+                                    <a href="./pages/iniciar_sesion.html">Iniciar sesión</a>
                                 </div>
                             </div>
                         </div>
@@ -61,12 +61,32 @@
             </div>
             <div class="header_item header_buscador">
                 <input type="text" name="buscador" placeholder="¿Qué estas buscando?">
+                <i class="bi bi-search"></i>
             </div>
             <div class="header_item header_cuenta">
-                <ul>
-                    <li><i class="bi bi-chat-left"></i><a href="" title="Ayuda">Ayuda</a></li>
-                    <li>
-                        <i class="bi bi-person"></i><a href="" title="Mi cuenta">Mi cuenta</a>
+                <ul class="cuanta_nav">
+                    <li><i class="bi bi-chat-left"></i>
+                        <div class="dropdown">
+                            <a data-bs-toggle="dropdown" aria-expanded="false">
+                                Ayuda
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" ><i class="bi bi-whatsapp"></i> 5491160490507</a></li>
+                                <li><a class="dropdown-item" ><i class="bi bi-envelope"></i> info@jdv.com</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <i class="bi bi-person"></i>
+                        <div class="dropdown">
+                            <a data-bs-toggle="dropdown" aria-expanded="false">
+                                Mi cuenta
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/iniciar_sesion.html">Iniciar sesión</a></li>
+                                <li><a class="dropdown-item" href="./pages/registrarse.html">Registrarse</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                         <i class="bi bi-cart3"></i>
@@ -105,7 +125,7 @@
             </div>
 
             <div class="header_item header_nav">
-                <ul>
+                <ul class="nav_bar">
                     <li><a href="./index.html" title="Inicio">INICIO</a></li>
                     <li><a href="./pages/nintendo.html" title="Nintendo">NINTENDO</a></li>
                     <li><a href="./pages/playstation.html" title="Playstation">PLAYSTATION</a></li>
@@ -327,90 +347,102 @@
         <section class="ofertas_section" id="ofertas">
             <h2>Ofertas</h2>
             <div class="ofertas_scroll">
-                <div class="tarjeta">
-                    <img src="./images/index/productos/placa_de_video.webp" alt="placa" />
-                    <div class="tarjeta_linea"></div>
-                    <div>
-                        <p>
-                            Placa de video Nvidia Asus TUF Gaming GeForce RTX 40 Series RTX 4070 Ti TUF-RTX4070TI-12G-GAMING 12GB
-                        </p>
+                <a href="./pages/producto_placa_video.html">
+                    <div class="tarjeta">
+                        <img src="./images/index/productos/placa_de_video.webp" alt="placa" />
+                        <div class="tarjeta_linea"></div>
                         <div>
-                            <h4>950.999$</h4>
-                            <h3>899.999$</h3>
+                            <p>
+                                Placa de video Nvidia Asus TUF Gaming GeForce RTX 40 Series RTX 4070 Ti TUF-RTX4070TI-12G-GAMING 12GB
+                            </p>
+                            <div>
+                                <h4>950.999$</h4>
+                                <h3>899.999$</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="tarjeta">
-                    <img src="./images/index/productos/pc_gamer.webp" alt="pc" />
-                    <div class="tarjeta_linea"></div>
-                    <div>
-                        <p>
-                            Pc Armada Gamer Amd Ryzen 5 5600g 12 Nucleo Ram 16gb Ssd 480
-                        </p>
+                <a href="./pages/producto_pc_gamer.html">
+                    <div class="tarjeta">
+                        <img src="./images/index/productos/pc_gamer.webp" alt="pc" />
+                        <div class="tarjeta_linea"></div>
                         <div>
-                            <h4>500.999$</h4>
-                            <h3>419.999$</h3>
+                            <p>
+                                Pc Armada Gamer Amd Ryzen 5 5600g 12 Nucleo Ram 16gb Ssd 480
+                            </p>
+                            <div>
+                                <h4>500.999$</h4>
+                                <h3>419.999$</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="tarjeta">
-                    <img src="./images/index/productos/monitor.webp" alt="monitor" />
-                    <div class="tarjeta_linea"></div>
-                    <div>
-                        <p>
-                            Monitor gamer LG UltraGear 24GN60R LCD 23.8" negro 100V/240V
-                        </p>
+                <a href="./pages/producto_monitor.html">
+                    <div class="tarjeta">
+                        <img src="./images/index/productos/monitor.webp" alt="monitor" />
+                        <div class="tarjeta_linea"></div>
                         <div>
-                            <h4>180.000$</h4>
-                            <h3>175.299$</h3>
+                            <p>
+                                Monitor gamer LG UltraGear 24GN60R LCD 23.8" negro 100V/240V
+                            </p>
+                            <div>
+                                <h4>180.000$</h4>
+                                <h3>175.299$</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="tarjeta">
-                    <img src="./images/index/productos/xbox_series_s.webp" alt="xbox" />
-                    <div class="tarjeta_linea"></div>
-                    <div>
-                        <p>
-                            Microsoft Xbox Series S 512GB Kit extra controller color blanco
-                        </p>
+                </a>
+                
+                <a href="./pages/producto_xbox_series_s.html">
+                    <div class="tarjeta">
+                        <img src="./images/index/productos/xbox_series_s.webp" alt="xbox" />
+                        <div class="tarjeta_linea"></div>
                         <div>
-                            <h4>679.999$</h4>
-                            <h3>579.999$</h3>
+                            <p>
+                                Microsoft Xbox Series S 512GB Kit extra controller color blanco
+                            </p>
+                            <div>
+                                <h4>679.999$</h4>
+                                <h3>579.999$</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="tarjeta">
-                    <img src="./images/index/juegos/juego_cup_head.png" alt="cup_head" />
-                    <div class="tarjeta_linea"></div>
-                    <div>
-                        <p>
-                            Cuphead - Nintendo Switch INCLUYE DLC "The Delicious Last course"
-                        </p>
+                </a>
+                
+                <a href="./pages/producto_xbox_mando.html">
+                    <div class="tarjeta">
+                        <img src="./images/index/productos/xbox_mando.webp" alt="mando" />
+                        <div class="tarjeta_linea"></div>
                         <div>
-                            <h4>30.000$</h4>
-                            <h3>28.490$</h3>
+                            <p>
+                                Joystick inalambrico Microsoft Xbox Wirless Controller Series X|S shck blue
+                            </p>
+                            <div>
+                                <h4>80.000$</h4>
+                                <h3>77.999$</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="tarjeta">
-                    <img src="./images/index/juegos/juego_demon.png" alt="demon" />
-                    <div class="tarjeta_linea"></div>
-                    <div>
-                        <p>
-                            Demon Slayer: The Hinokami Chronicles - Nintendo Switch
-                        </p>
+                <a href="./pages/producto_fifa_22.html">
+                    <div class="tarjeta">
+                        <img src="./images/index/juegos/fifa.webp" alt="fifa" />
+                        <div class="tarjeta_linea"></div>
                         <div>
-                            <h4>40.000$</h4>
-                            <h3>35.640$</h3>
+                            <p>
+                                FIFA 22 Standard Edition Electroonic Arts Xbox Series X Físico
+                            </p>
+                            <div>
+                                <h4>10.000$</h4>
+                                <h3>6.000$</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-
+                </a>
+                
             </div>
         </section>
 

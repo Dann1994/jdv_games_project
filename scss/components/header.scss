@@ -40,6 +40,7 @@ header {
         .header_buscador {
             grid-area: buscador;
             height: 100px;
+            position: relative;
             input {
                 @include input_conf(
                     50%, 90%, 10px, none, 18px, 10px,
@@ -47,11 +48,17 @@ header {
                     map-get($colores, Rojo_principal)
                 )
             }
+            i {
+                position: absolute;
+                right: 50px;
+                color: map-get($colores , Rojo_principal );
+                font-size: 20px;
+            }
         }
         .header_cuenta {
             grid-area: cuenta;
             margin: 0;
-            ul {
+            .cuanta_nav {
                 @include flex_conf();
                 padding: 0;
                 margin: 0;
@@ -59,6 +66,7 @@ header {
                     margin: 0px 15px 0px 15px;
                     text-align: center;
                     @include flex_conf(center, center, column);
+                    cursor: pointer;
                     a {
                         color: map-get($colores, Blanco_fondo);
                         font-weight: bolder;
@@ -66,6 +74,23 @@ header {
                     i {
                         color: map-get($colores, Blanco_fondo);
                         font-size: 35px;
+                    }
+                    .dropdown-menu {
+                        background-color: map-get($colores, Rojo_principal);
+                        padding: 0;
+                        li {
+                            width: auto;
+                            a {
+                                transition: 0.2s;
+                                &:hover {
+                                    background-color: initial;
+                                    font-weight: 900;
+                                }
+                                i {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -132,7 +157,7 @@ header {
         
         .header_nav {
             grid-area: nav;
-            ul {
+            .nav_bar {
                 @include flex_conf();
                 li {
                     margin: 5px 20px 5px 20px;

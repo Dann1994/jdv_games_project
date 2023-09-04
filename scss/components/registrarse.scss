@@ -1,0 +1,89 @@
+.registrase_container{
+    @include flex_conf(center, center, column);
+    nav {
+        margin: 20px;
+        text-align: center;
+        ol {
+            li {
+                font-size: 20px;
+                a {
+                    color: map-get($colores, Gris_fondo)
+                }
+            }
+        }
+    }
+    h2 {
+        margin-bottom: 30px;
+        color: map-get($colores, Rojo_principal);
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    p {
+        color: map-get($colores, Gris_h2);
+        margin: 20px;
+        text-align: center;
+    }
+    form {
+        @include flex_conf(center, start, column);
+        width: 70%;
+        label {
+            margin: 5px;
+        }
+        input {
+            margin: 10px 0px 10px 0px;
+            border: 1px solid map-get($colores, Gris_subtitulo);
+            @include dimenciones_conf(50%, 100%);
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 18px;
+            color: map-get($colores, Gris_subtitulo);
+            &::placeholder{
+                color: map-get($colores, Gris_subtitulo);
+            }
+        }
+    }
+    .capcha {
+        @include flex_conf(center, center, initial);
+        border: 1px solid ;
+        padding: 10px;
+        background-color: #F9F9F9;
+        border-radius: 5px;
+        div {
+            @include flex_conf(center, center, initial);
+            input {
+                transform: scale(3);
+                margin: 20px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+        }
+        div {
+            img {
+                width: 50px;
+                margin: 20px;
+            }
+        }
+    }
+    button{
+        background-color: $color_primario;
+        color: white;
+        margin: 15px;
+        width: 70%;
+        border: none;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 30px;
+        font-weight: bolder;
+        transition: 0.3s;
+        &:hover{
+            background-color: #ec616c;
+        }
+    }
+    p {
+        a {
+            color: map-get($colores, Rojo_principal );
+            font-weight: 600;
+        }
+    }
+}

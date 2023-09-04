@@ -43,8 +43,8 @@
                                 </ul>
                                 <div class="accordion_usuario">
                                     <i class="bi bi-person"></i>
-                                    <a>Crear cuenta</a>
-                                    <a>Iniciar sesión</a>
+                                    <a href="./registrarse.html">Crear cuenta</a>
+                                    <a href="./iniciar_sesion.html">Iniciar sesión</a>
                                 </div>
                             </div>
                         </div>
@@ -59,12 +59,32 @@
             </div>
             <div class="header_item header_buscador">
                 <input type="text" name="buscador" placeholder="¿Qué estas buscando?">
+                <i class="bi bi-search"></i>
             </div>
             <div class="header_item header_cuenta">
-                <ul>
-                    <li><i class="bi bi-chat-left"></i><a href="" title="Ayuda">Ayuda</a></li>
-                    <li>
-                        <i class="bi bi-person"></i><a href="" title="Mi cuenta">Mi cuenta</a>
+                <ul class="cuanta_nav">
+                    <li><i class="bi bi-chat-left"></i>
+                        <div class="dropdown">
+                            <a data-bs-toggle="dropdown" aria-expanded="false">
+                                Ayuda
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" ><i class="bi bi-whatsapp"></i> 5491160490507</a></li>
+                                <li><a class="dropdown-item" ><i class="bi bi-envelope"></i> info@jdv.com</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <i class="bi bi-person"></i>
+                        <div class="dropdown">
+                            <a data-bs-toggle="dropdown" aria-expanded="false">
+                                Mi cuenta
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./iniciar_sesion.html">Iniciar sesión</a></li>
+                                <li><a class="dropdown-item" href="./registrarse.html">Registrarse</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                         <i class="bi bi-cart3"></i>
@@ -103,7 +123,7 @@
             </div>
 
             <div class="header_item header_nav">
-                <ul>
+                <ul class="nav_bar">
                     <li><a href="../index.html" title="Inicio">INICIO</a></li>
                     <li><a href="./nintendo.html" title="Nintendo">NINTENDO</a></li>
                     <li><a href="./playstation.html" title="Playstation">PLAYSTATION</a></li>
@@ -246,7 +266,7 @@
 
             <!-- PRODUCTOS -->
             <section class="producto_grid_item producto_pruductos_section">
-                <a href="../pages/producto_poke_sword.html">
+                <a href="../pages/producto_xbox_series_s.html">
                     <div class="tarjeta">
                         <img src="../images/index/productos/xbox_series_s.webp" alt="series_s" />
                         <div class="tarjeta_linea"></div>
@@ -262,7 +282,7 @@
                     </div>
                 </a>
 
-                <a href="../pages/producto.html">
+                <a href="../pages/producto_fifa_22.html">
                     <div class="tarjeta">
                         <img src="../images/index/juegos/fifa.webp" alt="fifa" />
                         <div class="tarjeta_linea"></div>
@@ -278,7 +298,7 @@
                     </div>
                 </a>
 
-                <a href="../pages/producto_zelda_awakening.html">
+                <a href="../pages/producto_xbox_mando.html">
                     <div class="tarjeta">
                         <img src="../images/index/productos/xbox_mando.webp" alt="xbox_mando" />
                         <div class="tarjeta_linea"></div>
@@ -288,55 +308,6 @@
                             </p>
                             <div>
                                 <h3>77.999$</h3>
-
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="../pages/producto_poke_sword.html">
-                    <div class="tarjeta">
-                        <img src="../images/index/juegos/juego_pokemon_pack.png" alt="pokemon" />
-                        <div class="tarjeta_linea"></div>
-                        <div>
-                            <p>
-                                Pokemon Sword and Pokemon Shield Double Pack - Nintendo Switch
-                            </p>
-                            <div>
-                                <h3>98.450$</h3>
-
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="../pages/producto_poke_sword.html">
-                    <div class="tarjeta">
-                        <img src="../images/index/juegos/juego_pokemon_pack.png" alt="pokemon" />
-                        <div class="tarjeta_linea"></div>
-                        <div>
-                            <p>
-                                Pokemon Sword and Pokemon Shield Double Pack - Nintendo Switch
-                            </p>
-                            <div>
-                                <h3>98.450$</h3>
-
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="../pages/producto_poke_sword.html">
-                    <div class="tarjeta">
-                        <img src="../images/index/juegos/juego_pokemon_pack.png" alt="pokemon" />
-                        <div class="tarjeta_linea"></div>
-                        <div>
-                            <p>
-                                Pokemon Sword and Pokemon Shield Double Pack - Nintendo Switch
-                            </p>
-                            <div>
-                                <h3>98.450$</h3>
-
                             </div>
                         </div>
                     </div>
@@ -347,7 +318,6 @@
                 </div>
             </section>
         </div>
-
     </main>
 
     <!-- FOOTER -->
